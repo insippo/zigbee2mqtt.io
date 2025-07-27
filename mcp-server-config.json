@@ -1,0 +1,58 @@
+{
+  "mcpServers": {
+    "zigbee2mqtt-docs": {
+      "command": "node",
+      "args": ["mcp-server.js"],
+      "env": {}
+    }
+  },
+  "tools": {
+    "search_docs": {
+      "description": "Search through the Zigbee2MQTT documentation for specific terms or topics",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "The search term to look for in the documentation"
+          }
+        },
+        "required": ["query"]
+      }
+    },
+    "get_device_info": {
+      "description": "Get detailed information about a specific Zigbee device",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "device_name": {
+            "type": "string",
+            "description": "The name of the device to get information about"
+          }
+        },
+        "required": ["device_name"]
+      }
+    },
+    "list_devices": {
+      "description": "List all available Zigbee devices in the documentation",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    "get_project_info": {
+      "description": "Get information about the Zigbee2MQTT documentation project structure and available commands",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    "run_docgen": {
+      "description": "Run the documentation generation script to update device pages",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  }
+}

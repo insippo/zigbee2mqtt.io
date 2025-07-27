@@ -8,7 +8,8 @@
     "dev": "cross-env EXCLUDE_DEVICES=yes vuepress dev docs",
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8000 vuepress build docs",
     "docgen": "ts-node docgen",
-    "test": "ts-node docgen/tests"
+    "test": "ts-node docgen/tests",
+    "mcp-server": "node mcp-server.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +19,7 @@
     "quasar": "^2.2.0"
   },
   "devDependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
     "@types/glob": "^7.2.0",
     "@vuepress/plugin-docsearch": "^2.0.0-beta.26",
     "@vuepress/plugin-google-analytics": "^2.0.0-beta.27",
