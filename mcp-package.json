@@ -1,0 +1,21 @@
+{
+  "name": "vuepress-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for VuePress documentation management",
+  "main": "mcp-server.js",
+  "scripts": {
+    "start": "node mcp-server.js",
+    "dev": "node mcp-server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0"
+  },
+  "keywords": [
+    "mcp",
+    "vuepress",
+    "documentation",
+    "server"
+  ],
+  "author": "",
+  "license": "MIT"
+}
